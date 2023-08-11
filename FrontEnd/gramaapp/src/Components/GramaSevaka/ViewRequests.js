@@ -76,10 +76,12 @@ export default function ViewRequest() {
                       >
                         Completed
                       </button>
-                      <br/>
+                      
+                      
                       
                     </td>
-                    <br/>
+                    
+                    <input className="input-text"type="text" value="Hi"></input>
                   </tr>
               
             </tbody>

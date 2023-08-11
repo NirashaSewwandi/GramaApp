@@ -2453,6 +2453,16 @@ textarea.form-control-lg {
      -moz-appearance: none;
           appearance: none;
 }
+
+.input-text {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 @media (prefers-reduced-motion: reduce) {
   .form-select, .dataTable-selector {
     transition: none;
@@ -2583,6 +2593,9 @@ textarea.form-control-lg {
 .form-check-inline {
   display: inline-block;
   margin-right: 1rem;
+}
+.btn{
+  border: #000;
 }
 
 .btn-check {
