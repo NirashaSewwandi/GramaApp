@@ -32,7 +32,7 @@ function Login() {
             <a href="/signup">Don't have an account?</a>
           </div>
 
-          <MDBBtn className="mb-4 w-100" size="lg">Sign in</MDBBtn>
+          <MDBBtn className="mb-4 w-100" size="lg" href='/userhome'>Sign in</MDBBtn>
 
           <div className="divider d-flex align-items-center my-4">
           <p className="text-center fw-bold mx-auto mb-0">OR</p>
