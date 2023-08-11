@@ -4,8 +4,10 @@ import Login from "./Components/Common/Login";
 import SignUp from "./Components/Common/SignUp";
 import Request from "./Components/User/Request";
 import Status from "./Components/User/Status";
+import GSDashBoard from "./Components/GramaSevaka/GramaSevakaDashboard";
 
 import UserDashBoard from "./Components/User/UserDashboard";
+import ViewRequest from "./Components/GramaSevaka/ViewRequests";
 
 
 
@@ -20,7 +22,11 @@ function App() {
           <Route exact path="/signup" element={<SignUp/>}/>
           <Route exact path="/request" element={<Request/>}/>
           <Route exact path="/userhome" element={<UserDashBoard/>}/>
-          
+          <Route exact path="/status" element={<Status/>}/>
+          <Route exact path="/gshome" element={<GSDashBoard/>}/>
+          <Route exact path="/viewrequest" element={<ViewRequest/>}/>
+
+
 
          
       
