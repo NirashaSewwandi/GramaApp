@@ -10,7 +10,7 @@ configurable string password =?;
 //SETUP mongoDB Connection
 mongodb:ConnectionConfig mongoConfig = {
     connection: {
-        url: string `mongodb+srv://${username}:${password}@cluster0.ugsiwjk.mongodb.net/?retryWrites=true&w=majority`
+        url: string `mongodb+srv://${username}:${password}@cluster0.sg7wemt.mongodb.net/?retryWrites=true&w=majority`
         
         // auth: {
         //     username: "nirasha",
@@ -21,7 +21,7 @@ mongodb:ConnectionConfig mongoConfig = {
         //     serverSelectionTimeout: 5000
         // }
     },
-    databaseName: "GramaSewakaApp"
+    databaseName: "Identity"
 };
 
 //Create a client
@@ -31,7 +31,7 @@ mongodb:Client mongoClient = check new (mongoConfig);
 type definetype record {
     string firstName;
     string lastName;
-    string age;
+    int age;
 
     //more to come : TODO
 
@@ -40,7 +40,7 @@ type definetype record {
 public function main() returns error? {
     
     string collection = "People";
-    map<json> doc = { "firstName": "John", "lastName": "Doe", "age" : "23" };
+    map<json> doc = { "firstName": "John", "lastName": "Doe", "age" : 25 };
 
     check mongoClient->insert(doc, collection);
 
