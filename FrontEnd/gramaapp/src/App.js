@@ -4,20 +4,16 @@ import Login from "./Components/Common/Login";
 import SignUp from "./Components/Common/SignUp";
 import Request from "./Components/User/Request";
 
-
-
 function App() {
   return (
     <div>
       <Router>
         <Routes>
+
           <Route exact path="/" element={<Login/>} />
           <Route exact path="/signup" element={<SignUp/>}/>
           <Route exact path="/request" element={<Request/>}/>
 
-         
-      
-       
         </Routes>
       </Router>
     </div>
