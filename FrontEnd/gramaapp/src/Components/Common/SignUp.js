@@ -74,7 +74,7 @@ function SignUp() {
                         <div className="d-grid">
                           <input
                             type="submit"
-                            className="btn btn-secondary btn-block"
+                            className="btn1"
                             
                             value="Create Account"
                           ></input>

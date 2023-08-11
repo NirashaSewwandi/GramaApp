@@ -2,8 +2,9 @@ import React from "react";
 import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
-function Header() {
- 
+function GSHeader() {
+
+
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light ">
@@ -14,14 +15,9 @@ function Header() {
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/request" style={{color:"white"}}>Request letter <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/viewrequest" style={{color:"white"}}>View Requests <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/status" style={{color:"white"}}>Check Status</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" style={{color:"white"}}>Help</a>
-      </li>
+      
      
     </ul>
   </div>
@@ -29,11 +25,11 @@ function Header() {
     <span class="notification-icon"><NotificationsIcon/></span>
   </div>
   <div class="navbar-actions" style={{marginRight:"15px"}}>
-    <span class="logout-icon"><a style={{color:"white"}}href="/"><LogoutIcon/></a></span>
+    <span class="logout-icon"><a href="/a" style={{color:"white"}}><LogoutIcon/></a></span>
   </div>
 </nav>
     </div>
   );
 }
 
-export default Header;
+export default GSHeader;
