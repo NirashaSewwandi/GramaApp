@@ -1,7 +1,7 @@
 // import ballerina/io;
 
 import ballerinax/mongodb;
-import ballerina/io;
+// import ballerina/io;
 
 
 configurable string username =?;
@@ -21,7 +21,7 @@ mongodb:ConnectionConfig mongoConfig = {
         //     serverSelectionTimeout: 5000
         // }
     },
-    databaseName: "Identity"
+    databaseName: "GramaSewakaApp"
 };
 
 //Create a client
@@ -38,20 +38,22 @@ type definetype record {
 };
 
 public function main() returns error? {
+
     
-    string collection = "People";
-    map<json> doc = { "firstName": "John", "lastName": "Doe", "age" : 25 };
+    
+    // string collection = "People";
+    // map<json> doc = { "firstName": "John", "lastName": "Doe", "age" : 25 , "NIC": "9988"};
 
-    check mongoClient->insert(doc, collection);
+    // check mongoClient->insert(doc, collection);
 
-    stream<definetype, error?> resultData = check mongoClient->find(collectionName = "People");
+    // stream<definetype, error?> resultData = check mongoClient->find(collectionName = "People");
         
 
-    check resultData.forEach(function(definetype datas){
-            io:println(datas.firstName.toString());
-            io:println(datas.lastName.toString());
-            // log:println(datas.age.toString());
-    });
+    // check resultData.forEach(function(definetype datas){
+    //         io:println(datas.firstName.toString());
+    //         io:println(datas.lastName.toString());
+    //         // log:println(datas.age.toString());
+    // });
 
    
 
