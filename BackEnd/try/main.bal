@@ -13,8 +13,8 @@ type PoliceStatus record {
 
 
 
-configurable string username =?;
-configurable string password =?;
+// configurable string username =?;
+// configurable string password =?;
 
 
 
