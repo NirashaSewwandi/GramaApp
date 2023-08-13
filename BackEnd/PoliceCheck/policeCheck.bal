@@ -18,22 +18,12 @@ configurable string password =?;
 
 
 
-//SETUP mongoDB Connection
-mongodb:ConnectionConfig mongoConfig = {
-    connection: {
-        url: string `mongodb+srv://${username}:${password}@cluster0.sg7wemt.mongodb.net/?retryWrites=true&w=majority`
-        
-    },
-    databaseName: "GramaSewakaApp"
-};
-//Create a client
-mongodb:Client mongoClient = check new (mongoConfig);
-
-
-
 
 //service for identity check
 service /PoliceVerify on new http:Listener(8090) {
+    
+
+    
 
 
     //Check whether the NIC exists or not
@@ -41,7 +31,17 @@ service /PoliceVerify on new http:Listener(8090) {
 
     resource function get PoliceVerification/[string NIC]() returns boolean|error {
         
-        
+        //SETUP mongoDB Connection
+        mongodb:ConnectionConfig mongoConfig1 = {
+            connection: {
+                url: string `mongodb+srv://${username}:${password}@cluster0.sg7wemt.mongodb.net/?retryWrites=true&w=majority`
+                
+            },
+            databaseName: "GramaSewakaApp"
+        };
+        //Create a client
+        mongodb:Client mongoClient = check new (mongoConfig1);
+
         map<json> queryString = {"NIC": NIC ,"CriminalRecords":"NO"};
         stream<PoliceStatus, error?> resultData = check mongoClient->find(collectionName = "PoliceDetails",filter = (queryString));
         // boolean valid = false;
