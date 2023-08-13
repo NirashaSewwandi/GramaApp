@@ -3,8 +3,6 @@ import ballerinax/mongodb;
 // import ballerina/io;
 
 
-
-
 type User record {
     json _id;
     string firstName;
@@ -14,10 +12,8 @@ type User record {
 };
 
 
-
 configurable string username =?;
 configurable string password =?;
-
 
 
 //SETUP mongoDB Connection
@@ -30,8 +26,6 @@ mongodb:ConnectionConfig mongoConfig = {
 };
 //Create a client
 mongodb:Client mongoClient = check new (mongoConfig);
-
-
 
 
 //service for identity check
