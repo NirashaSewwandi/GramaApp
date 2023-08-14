@@ -294,7 +294,7 @@ modules = [
 
 [[package]]
 org = "nirashasewwandi"
-name = "tryDB"
+name = "PoliceCheck"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "http"},
@@ -302,6 +302,6 @@ dependencies = [
 	{org = "ballerinax", name = "mongodb"}
 ]
 modules = [
-	{org = "nirashasewwandi", packageName = "tryDB", moduleName = "tryDB"}
+	{org = "nirashasewwandi", packageName = "PoliceCheck", moduleName = "PoliceCheck"}
 ]
 

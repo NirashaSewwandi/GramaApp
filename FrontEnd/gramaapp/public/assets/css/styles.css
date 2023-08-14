@@ -255,11 +255,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: white;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #483248;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -324,7 +324,7 @@ svg {
 table {
   caption-side: bottom;
   border-collapse: collapse;
-  margin-left: 10%;
+  
 }
 
 caption {
@@ -371,6 +371,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  align-items: center;
 }
 
 button,
@@ -654,11 +655,11 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  width: 70%;
+  width: 50%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 100px;
+  margin-left: 100px;
   
 }
 
@@ -1991,10 +1992,11 @@ progress {
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
   --bs-table-hover-color: #212529;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-  width: 100%;
+  width: 75%;
   margin-bottom: 1rem;
   text-align: center;
   color: #212529;
+  
   vertical-align: top;
   border-color:black;
 }
@@ -2146,6 +2148,7 @@ progress {
   --bs-table-hover-color: #fff;
   color: #fff;
   border-color: #373b3e;
+  margin-left: 0%;
 }
 
 .table-responsive, .dataTable-wrapper .dataTable-container {
@@ -3131,8 +3134,8 @@ textarea.form-control-lg {
 
 .btn-success {
   color: #fff;
-  background-color: #198754;
-  border-color: #198754;
+  background-color: #AAFF00;
+  border-color: #AAFF00;
 }
 .btn-success:hover {
   color: #fff;
@@ -3519,6 +3522,18 @@ textarea.form-control-lg {
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
+}
+
+.btn1 {
+  color: #fff;
+  background-color: #483248;
+  border-color: #483248;
+}
+
+#lo{
+  width: 80%;
+    height: 600px;
+    margin-left: 100px;
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -3997,11 +4012,11 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: black;
+  color:white;
 }
 
 .nav-link.disabled {
-  color: black;
+  color: white;
   pointer-events: none;
   cursor: default;
 }
@@ -4019,10 +4034,10 @@ textarea.form-control-lg {
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
   isolation: isolate;
-  color: black;
+  color: white
 }
 .nav-tabs .nav-link.disabled {
-  color: black;
+  color: white;
   background-color: transparent;
   border-color: transparent;
 }
@@ -4082,7 +4097,9 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: 	indigo
+  color: white;
+  width: 100%;
+  background-color: 	#483248
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4103,7 +4120,7 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
-  color: #000;
+  color: white;
   font-weight: bold;
 }
 .navbar-nav {
@@ -4566,7 +4583,7 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 5px solid #483248;
   border-radius: 0.25rem;
   width
 }
@@ -6600,11 +6617,12 @@ textarea.form-control-lg {
 }
 
 .fixed-top, .sb-nav-fixed #layoutSidenav #layoutSidenav_nav, .sb-nav-fixed .sb-topnav {
-  position: fixed;
+  position:relative;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
+  height: 100;
 }
 
 .fixed-bottom {
@@ -11514,7 +11532,7 @@ body {
 }
 .sb-sidenav .sb-sidenav-menu {
   flex-grow: 1;
-  background-color: 	indigo
+  background-color: 	#483248
 }
 .sb-sidenav .sb-sidenav-menu .nav {
   flex-direction: column;
@@ -11909,8 +11927,8 @@ body {
 }
 
 #logo{
-  width:125%;
-  margin-left: 60px;
+  width:50%;
+  margin-left: 100px;
   align-content: center;
   align-self: center;
  }
@@ -11936,7 +11954,8 @@ body {
   margin-right: auto;
   margin-left: auto;
   position:absolute; 
-  left:175px
+  left:100px
+  
 
 }
 
